@@ -1,6 +1,6 @@
 import { Outlet, Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
-import { HomeIcon, DocumentTextIcon, AcademicCapIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
+import { HomeIcon, DocumentTextIcon, AcademicCapIcon, UserPlusIcon, ArrowRightOnRectangleIcon } from '@heroicons/react/24/outline';
 
 export default function Layout() {
   const { user, logout } = useAuthStore();
@@ -15,6 +15,7 @@ export default function Layout() {
     { name: 'Dashboard', href: '/dashboard', icon: HomeIcon },
     { name: 'SOP Repository', href: '/repository', icon: DocumentTextIcon },
     { name: 'Onboarding', href: '/onboarding', icon: AcademicCapIcon },
+    { name: 'Admin', href: '/admin', icon: UserPlusIcon },
   ];
 
   return (

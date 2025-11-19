@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import SOPRepository from './pages/SOPRepository';
 import SOPDetail from './pages/SOPDetail';
 import OnboardingDashboard from './pages/OnboardingDashboard';
+import Admin from './pages/Admin';
 import Layout from './components/Layout';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="repository" element={<SOPRepository />} />
           <Route path="repository/:id" element={<SOPDetail />} />
           <Route path="onboarding" element={<OnboardingDashboard />} />
+          <Route path="admin" element={<Admin />} />
         </Route>
       </Routes>
     </>
